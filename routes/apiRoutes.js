@@ -28,7 +28,7 @@ router.delete('/users/:id', deleteUser);
 router.post('/users/:userId/friends/:friendId', addFriend);
 router.delete('/users/:userId/friends/:friendId', removeFriend);
 
-// Though Routes
+// Thought Routes
 router.get('/thoughts', getAllThoughts);
 router.get('/thoughts/:id', getThoughtsById);
 router.post('/thoughts', createThoughts);
