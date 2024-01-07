@@ -25,5 +25,16 @@ router.get('/users/:id', getUsersById);
 router.post('/users', createUser);
 router.put('/users/:id', updateUser);
 router.delete('/users/:id', deleteUser);
-router.post('/users/:userId/friends/:friendId' addFriend);
-router.delete('/users/:userId/friends/:friendId' removeFriend);
+router.post('/users/:userId/friends/:friendId', addFriend);
+router.delete('/users/:userId/friends/:friendId', removeFriend);
+
+// Though Routes
+router.get('/thoughts', getAllThoughts);
+router.get('/thoughts/:id', getThoughtsById);
+router.post('/thoughts', createThoughts);
+router.put('/thoughts/:id', updateThought);
+router.delete('/thoughts/:id', deleteThought);
+router.post('/thoughts/:thoughtId/reactions', createReaction);
+router.delete('/thoughts/:thoughtId/reactions/:reactionId', deleteReaction);
+
+module.exports = router;
